@@ -11,9 +11,9 @@ import numpy as np
 def crt_file(path):
     os.makedirs(path, exist_ok=True)
 
-class DDSPseg_test(object):
+class DDSPSeg_test(object):
     def __init__(self, args=None):
-        super(DDSPseg_test, self).__init__()
+        super(DDSPSeg_test, self).__init__()
 
         self.fold_num = args.fold_num
         self.fold = args.fold
@@ -142,7 +142,7 @@ if __name__ == '__main__':
     
     args = parser.parse_args()
 
-    testmodel = DDSPseg_test(args = args)
+    testmodel = DDSPSeg_test(args = args)
     testmodel.load_model()
     testmodel.test()
 
