@@ -40,8 +40,6 @@ dataset/
         ├── label.nii
     ├── patient2
 ```
-
-## Training 
 ```bash
 python train.py
 ```
