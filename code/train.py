@@ -14,9 +14,9 @@ import numpy as np
 def crt_file(path):
     os.makedirs(path, exist_ok=True)
 
-class DDSPseg(object):
+class DDSPSeg(object):
     def __init__(self, args=None):
-        super(DDSPseg, self).__init__()
+        super(DDSPSeg, self).__init__()
 
         self.fold_num = args.fold_num
         self.fold = args.fold
@@ -314,6 +314,6 @@ if __name__ == '__main__':
     
     args = parser.parse_args()
 
-    trainer = DDSPseg(args = args)
+    trainer = DDSPSeg(args = args)
     trainer.train()
 
