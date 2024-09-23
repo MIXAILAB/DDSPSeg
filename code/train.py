@@ -263,7 +263,7 @@ class DDSPSeg(object):
         self.seg.load_state_dict(torch.load('{0}/seg_epoch_{1}.pth'.format(path, epoch)),strict=True)
 
     def train(self):
-        self.trainwriter = LogWriter(name=self.checkpoint_dir + "/train_" + self.model_name,
+        self.trainwriter = LogWriter(name=self.checkpoint_ + "/train_" + self.model_name,
                                      head=["epoch", 'loss_ent', 'loss_consist', 'loss_fe', 'loss_seg', 'loss_all']) 
 
         for epoch in range(self.epoches - self.start_epoch):
@@ -296,7 +296,7 @@ if __name__ == '__main__':
     parser.add_argument('--num_epoch', type=int, default=500)
     parser.add_argument('--num_iters', type=int, default=20)
     parser.add_argument('--save_epoch', type=int, default=10)
-    parser.add_argument('--model_name', default="DDSPseg")
+    parser.add_argument('--model_name', default="DDSPSeg")
 
     parser.add_argument('--lr_enc', type=int, default=1e-4)
     parser.add_argument('--lr_seg', type=int, default=1e-3)
