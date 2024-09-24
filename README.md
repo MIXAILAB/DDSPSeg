@@ -11,7 +11,7 @@ Recent unsupervised domain adaptation (UDA) methods in medical image segmentatio
 <p align="center"><img width="100%" src="fig/name2.jpg" /></p>
 
 ## Paper
-This repository provides the official PyTorch implementation of GVSL in the following papers:
+This repository provides the official PyTorch implementation of DDSPSeg in the following papers:
 
 **[Dual domain distribution disruption with semantics preservation: Unsupervised domain adaptation for medical image segmentation](https://doi.org/10.1016/j.media.2024.103275)** <br/> 
 [Boyun Zheng, Ranran Zhang, Songhui Diao, Jingke Zhu, Yixuan Yuan, Jing Cai, Liang Shao, Shuo Li, Wenjian Qin] <br/>
