@@ -205,7 +205,7 @@ class DDSPSeg(object):
         self.opt_e.zero_grad()
         self.opt_seg.zero_grad()
         self.sen_loss = self.seg_loss + self.target_consist + self.loss_ent 
-        self.seg_loss.backward()
+        self.sen_loss.backward()
 
         self.opt_e.step()
         self.opt_seg.step()
