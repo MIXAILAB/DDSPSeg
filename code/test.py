@@ -108,7 +108,6 @@ class DDSPSeg_test(object):
             tarlabel = torch.from_numpy(
                 self.to_categorical(tarlabel, num_classes=self.n_classes)[np.newaxis, :, :, :, :]).cuda()
 
-            ###验证损失
             with torch.no_grad():
                 latent_b = self.enc(tarimg)
                 pred_mask_b = self.seg(latent_b)
