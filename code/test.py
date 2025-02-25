@@ -85,7 +85,7 @@ class DDSPSeg_test(object):
         path = self.checkpoint
         epoch = self.load_epoch
         print("loading model epoch ", str(epoch))
-        self.enc.load_state_dict(torch.load('{0}/ec_epoch_{1}.pth'.format(path, epoch)),strict=True) #, strict=True
+        self.enc.load_state_dict(torch.load('{0}/ec_epoch_{1}.pth'.format(path, epoch)),strict=True) 
         self.seg.load_state_dict(torch.load('{0}/seg_epoch_{1}.pth'.format(path, epoch)),strict=True)
 
     def test(self):
